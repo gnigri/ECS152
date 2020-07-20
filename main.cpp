@@ -11,7 +11,7 @@ int length;
 double time;
 double mu = 1; // service rate
 double lambda = 0.8; // rate
-const int MAXBUFFER = 20; //can change the size
+const int MAXBUFFER = 20; //can change the size; infinite if -1
 const int RANDOM_SEED = 500;
 
 /*Initialize;
@@ -55,7 +55,7 @@ int main() {
         simulation.emplace_back(time, length);
       }
       else { //length > 0
-        if (buffer.size() < MAXBUFFER) { // if packet can enter
+        if ((buffer.size() < MAXBUFFER) || (MAXBUFFER < 0)) { // if packet can enter
           buffer.emplace(service_time);
           length++;
           simulation.emplace_back(time, length);
@@ -100,5 +100,4 @@ int main() {
   //  cout << a << " " << b << endl;
   return 0;
 }
-
 
