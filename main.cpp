@@ -55,7 +55,7 @@ int main() {
         simulation.emplace_back(time, length);
       }
       else { //length > 0
-        if ((buffer.size() < MAXBUFFER) || (MAXBUFFER < 0)) { // if packet can enter
+        if ((buffer.size() < MAXBUFFER) || (MAXBUFFER == -1)) { // if packet can enter
           buffer.emplace(service_time);
           length++;
           simulation.emplace_back(time, length);
