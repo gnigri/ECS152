@@ -2,11 +2,11 @@
 Made by Georgia Nigri and Near Wu
 
 ## Description:
-This project discrete event simulator that studies the behavior of an IEE 802.x based Network. 
+This project a discrete event simulator that studies the behavior of an IEE 802.x based Network. 
 
 ## Files:
 ### main.cpp:
-It implements the simulator (Initialization, Processing an Arrival Event and Procession a Departure Event) and the implements the Queue that acts as the buffer.
+It implements the simulator (Initialization, Processing an Arrival Event and Procession a Departure Event) and it implements the Queue that acts as the buffer.
 ### Event.cpp
 It creates the Event structure.
 ### GEL.cpp
