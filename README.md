@@ -1,5 +1,5 @@
 # ECS152 - Project 1 
-Made by Georgia Nigri and Near Wu
+Made by Georgia Nigri and Tony Wu
 
 ## Description:
 This project a discrete event simulator that studies the behavior of an IEE 802.x based Network. 
