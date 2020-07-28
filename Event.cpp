@@ -1,5 +1,5 @@
 struct event {
-  double time; // not sure the unitstalk about it next meeting
+  double time;
   bool is_arrival; // true if arrival, else is departure.
   event *prev;
   event *next;
