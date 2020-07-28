@@ -40,7 +40,7 @@ int main() {
   list.add(time + inter_time, true);
   vector<pair<double,int>> simulation{{0.0,0}}; // all (timestamp, current length) during the simulation
   
-  for (int i = 0; i < 10000; i++) {
+  for (int i = 0; i < 100000; i++) {
     auto tmp_ = list.remove();
     bool is_arrival = tmp_.first;
     double n_time = tmp_.second;
